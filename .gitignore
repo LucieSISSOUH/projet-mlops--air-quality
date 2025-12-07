@@ -6,3 +6,8 @@ __pycache__/
 *.tmp
 .DS_Store
 *.env
+tofu/venv/
+tofu/.terraform/
+tofu/.terraform.lock.hcl
+tofu/terraform.tfstate
+tofu/terraform.tfstate.backup
