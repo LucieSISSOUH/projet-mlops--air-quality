@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/lsiss/OneDrive%20-%20aivancity/projet-mlops/mlflow/mlruns/968954911521320910/033064cb646e4e70970d11e8f94b7eac/artifacts
+end_time: 1764718209096
+entry_point_name: ''
+experiment_id: '968954911521320910'
+lifecycle_stage: active
+run_id: 033064cb646e4e70970d11e8f94b7eac
+run_name: Run-5-Mix-150-15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764718203818
+status: 3
+tags: []
+user_id: lsiss

@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/lsiss/OneDrive%20-%20aivancity/projet-mlops/mlflow/mlruns/968954911521320910/2c917bf8198a46ffb6004c9db00cd1bc/artifacts
+end_time: 1764718194579
+entry_point_name: ''
+experiment_id: '968954911521320910'
+lifecycle_stage: active
+run_id: 2c917bf8198a46ffb6004c9db00cd1bc
+run_name: Run-3-Petit-50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764718188401
+status: 3
+tags: []
+user_id: lsiss

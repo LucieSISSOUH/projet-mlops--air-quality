@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/lsiss/OneDrive%20-%20aivancity/projet-mlops/mlflow/mlruns/968954911521320910/models/m-0d707196c7a54460bdfc2f985198ee4f/artifacts
+creation_timestamp: 1764718205046
+experiment_id: '968954911521320910'
+last_updated_timestamp: 1764718209034
+model_id: m-0d707196c7a54460bdfc2f985198ee4f
+model_type: null
+name: model
+source_run_id: 033064cb646e4e70970d11e8f94b7eac
+status: 2
+status_message: null

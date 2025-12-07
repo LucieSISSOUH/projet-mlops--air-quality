@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/lsiss/OneDrive%20-%20aivancity/projet-mlops/mlflow/mlruns/968954911521320910/6039bc23bcae429eba4471d2d099c70e/artifacts
+end_time: 1764718203810
+entry_point_name: ''
+experiment_id: '968954911521320910'
+lifecycle_stage: active
+run_id: 6039bc23bcae429eba4471d2d099c70e
+run_name: Run-4-Profondeur-10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764718194591
+status: 3
+tags: []
+user_id: lsiss

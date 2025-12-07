@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/lsiss/OneDrive%20-%20aivancity/projet-mlops/mlflow/mlruns/968954911521320910/5edde4bf5f5d446cbd324d8915ac9661/artifacts
+end_time: 1764718188393
+entry_point_name: ''
+experiment_id: '968954911521320910'
+lifecycle_stage: active
+run_id: 5edde4bf5f5d446cbd324d8915ac9661
+run_name: Run-2-Gros-500
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764718177119
+status: 3
+tags: []
+user_id: lsiss

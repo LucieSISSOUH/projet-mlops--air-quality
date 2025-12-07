@@ -1,0 +1,27 @@
+// tofu/templates/inventory.tpl
+
+all:
+  vars:
+    ansible_user: ubuntu
+    # Ansible a besoin de la clé PRIVÉE (myKeyML.pem) pour se connecter aux instances EC2.
+    ansible_ssh_private_key_file: C:\Users\synty\.ssh\myKeyML.pem
+    # Mot de passe pour la configuration initiale de Grafana (lu depuis variables.tf)
+    grafana_password: admin123 
+  children:
+    # Groupe pour l'instance API
+    api_group:
+      hosts:
+        api_host:
+          # IP de l'instance API fournie par OpenTofu
+          ansible_host: 35.180.29.20 
+          api_port: 8000
+    
+    # Groupe pour l'instance Monitoring
+    monitoring_group:
+      hosts:
+        monitoring_host:
+          # IP de l'instance Monitoring fournie par OpenTofu
+          ansible_host: 35.181.152.214
+          grafana_port: 3000
+          # URL complète de l'API cible pour la configuration de Prometheus par Ansible
+          api_target: http://35.180.29.20:8000

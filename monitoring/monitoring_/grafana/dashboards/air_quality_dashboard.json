@@ -1,0 +1,41 @@
+{
+  "title": "Air Quality API - Monitoring",
+  "timezone": "browser",
+  "schemaVersion": 36,
+  "version": 1,
+  "panels": [
+    {
+      "id": 1,
+      "type": "timeseries",
+      "title": "Requêtes API (par seconde)",
+      "targets": [
+        {
+          "expr": "sum(rate(api_request_count[5m]))",
+          "legendFormat": "Requêtes/s"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "timeseries",
+      "title": "Latence API (95e percentile)",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(api_request_latency_seconds_bucket[5m])) by (le))",
+          "legendFormat": "Latence"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "stat",
+      "title": "Statut de l'API",
+      "targets": [
+        {
+          "expr": "up{job=\"air_quality_api\"}",
+          "legendFormat": "UP/DOWN"
+        }
+      ]
+    }
+  ]
+}

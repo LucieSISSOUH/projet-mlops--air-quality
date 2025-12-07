@@ -1,0 +1,33 @@
+---
+- name: Déployer l'API Air Quality
+  hosts: api_group
+  become: yes
+
+  vars:
+    api_image: "luciesissouh/air-quality-api:latest"  # ex : amelia/air-quality-api:latest
+    container_name: "air_quality_api_container"
+    api_port: 8000
+
+  tasks:
+    - name: Télécharger l'image Docker
+      ansible.builtin.command: >
+        docker pull {{ api_image }}
+
+    - name: Arrêter l'ancien conteneur
+      ansible.builtin.shell: |
+        if [ "$(docker ps -q -f name={{ container_name }})" ]; then
+          docker stop {{ container_name }};
+        fi
+
+    - name: Supprimer le conteneur
+      ansible.builtin.shell: |
+        if [ "$(docker ps -aq -f name={{ container_name }})" ]; then
+          docker rm {{ container_name }};
+        fi
+
+    - name: Lancer le nouveau conteneur
+      ansible.builtin.command: >
+        docker run -d
+        --name {{ container_name }}
+        -p 8000:{{ api_port }}
+        {{ api_image }}

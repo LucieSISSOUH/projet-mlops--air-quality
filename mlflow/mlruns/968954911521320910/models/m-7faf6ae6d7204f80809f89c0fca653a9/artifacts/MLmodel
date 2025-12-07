@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/lsiss/OneDrive%20-%20aivancity/projet-mlops/mlflow/mlruns/968954911521320910/models/m-7faf6ae6d7204f80809f89c0fca653a9/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.6.0
+model_id: m-7faf6ae6d7204f80809f89c0fca653a9
+model_size_bytes: 2184290
+model_uuid: m-7faf6ae6d7204f80809f89c0fca653a9
+prompts: null
+run_id: 3d1b92dbd8cb418c8d4d3cede5a34bbd
+utc_time_created: '2025-12-02 23:29:27.427112'

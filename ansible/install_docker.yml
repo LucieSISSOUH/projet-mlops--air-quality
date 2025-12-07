@@ -1,0 +1,20 @@
+---
+- name: Installer Docker sur le serveur de l'API
+  hosts: api_group
+  become: yes
+
+  tasks:
+    - name: Mettre à jour la liste des paquets
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Installer Docker
+      ansible.builtin.apt:
+        name: docker.io
+        state: present
+
+    - name: S'assurer que Docker tourne
+      ansible.builtin.service:
+        name: docker
+        state: started
+        enabled: yes
